@@ -1,15 +1,30 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-    
-    <groupId>com.example.maven</groupId>
-    <artifactId>maven-project</artifactId>
-    <version>1.0-SNAPSHOT</version>
-    
-    <properties>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
-    </properties>
-</project>
-
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>fr.epsi.b3</groupId>
+	<artifactId>hello</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
+	<properties>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+	<build>
+    <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-war-plugin</artifactId>
+            <version>3.3.2</version> <!-- Mettez ici la version que vous souhaitez utiliser -->
+        </plugin>
+        <!-- Autres plugins -->
+        <plugin>
+      <!-- le plugin pour démarrer TomEE depuis la ligne de commande avec maven : 
+          mvn package tomee:run
+      -->
+      <groupId>org.apache.tomee.maven</groupId>
+      <artifactId>tomee-maven-plugin</artifactId>
+      <version>8.0.9</version>
+      <configuration>
+        <tomeeVersion>8.0.9</tomeeVersion>
+        <tomeeClassifier>plus</tomeeClassifier>
