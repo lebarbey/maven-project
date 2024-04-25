@@ -86,7 +86,7 @@
                     <id>findbugs</id>
                     <phase>verify</phase>
                     <goals>
-                        <goal>check</goal>
+                        <goal>findbugs</goal>
                     </goals>
                 </execution>
             </executions>
