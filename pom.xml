@@ -28,3 +28,4 @@
       <configuration>
         <tomeeVersion>8.0.9</tomeeVersion>
         <tomeeClassifier>plus</tomeeClassifier>
+      </plugins>
