@@ -75,7 +75,7 @@
         <plugin>
             <groupId>org.codehaus.mojo</groupId>
             <artifactId>findbugs-maven-plugin</artifactId>
-            <version>3.0.5</version>
+            <version>3.0.4</version>
             <configuration>
                 <effort>Max</effort> <!-- Niveau d'effort de l'analyse (Low, Default, Max) -->
                 <threshold>Low</threshold> <!-- Seuil de détection des bugs (Low, Medium, High) -->
