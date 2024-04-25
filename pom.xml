@@ -10,23 +10,4 @@
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
-	<build>
-    <plugins>
-        <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-war-plugin</artifactId>
-            <version>3.3.2</version> <!-- Mettez ici la version que vous souhaitez utiliser -->
-        </plugin>
-        <!-- Autres plugins -->
-        <plugin>
-      <!-- le plugin pour démarrer TomEE depuis la ligne de commande avec maven : 
-          mvn package tomee:run
-      -->
-      <groupId>org.apache.tomee.maven</groupId>
-      <artifactId>tomee-maven-plugin</artifactId>
-      <version>8.0.9</version>
-      <configuration>
-        <tomeeVersion>8.0.9</tomeeVersion>
-        <tomeeClassifier>plus</tomeeClassifier>
-      </plugins>
-	</build>
+	
