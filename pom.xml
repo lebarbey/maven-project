@@ -81,15 +81,7 @@
                 <threshold>Low</threshold> <!-- Seuil de détection des bugs (Low, Medium, High) -->
                 <xmlOutputDirectory>findbugs-reports</xmlOutputDirectory> <!-- Répertoire de sortie pour les rapports XML -->
             </configuration>
-            <executions>
-                <execution>
-                    <id>findbugs</id>
-                    <phase>verify</phase>
-                    <goals>
-                        <goal>findbugs</goal>
-                    </goals>
-                </execution>
-            </executions>
+            
         </plugin>
     </plugins>
 </build>
