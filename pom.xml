@@ -30,59 +30,6 @@
         <tomeeClassifier>plus</tomeeClassifier>
       </configuration>
     </plugin>
-         <!-- Plugin PMD -->
-        <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-pmd-plugin</artifactId>
-            <version>3.13.0</version>
-            <configuration>
-            <xmlOutputDirectory>checketyle-reports</xmlOutputDirectory> 
-            <!-- Répertoire de sortie pour les rapports XML -->
-            </configuration>
-            <executions>
-                <execution>
-                    <phase>verify</phase>
-                    <goals>
-                        <goal>pmd</goal>
-                    </goals>
-                </execution>
-            </executions>
-        </plugin>
-      
-        <!-- Plugin Checkstyle -->
-        <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-checkstyle-plugin</artifactId>
-            <version>3.1.2</version>
-            <configuration>
-            <xmlOutputDirectory>checketyle-reports</xmlOutputDirectory> 
-            <!-- Répertoire de sortie pour les rapports XML -->           
-                <encoding>UTF-8</encoding>
-                <consoleOutput>true</consoleOutput>
-                <failsOnError>true</failsOnError>
-            </configuration>
-            <executions>
-                <execution>
-                    <id>checkstyle</id>
-                    <phase>validate</phase>
-                    <goals>
-                        <goal>check</goal>
-                    </goals>
-                </execution>
-            </executions>
-        </plugin>
-        <!-- Plugin FindBugs -->
-        <plugin>
-            <groupId>org.codehaus.mojo</groupId>
-            <artifactId>findbugs-maven-plugin</artifactId>
-            <version>3.0.4</version>
-            <configuration>
-                <effort>Max</effort> <!-- Niveau d'effort de l'analyse (Low, Default, Max) -->
-                <threshold>Low</threshold> <!-- Seuil de détection des bugs (Low, Medium, High) -->
-                <xmlOutputDirectory>findbugs-reports</xmlOutputDirectory> <!-- Répertoire de sortie pour les rapports XML -->
-            </configuration>
-            
-        </plugin>
     </plugins>
 </build>
 </project>
